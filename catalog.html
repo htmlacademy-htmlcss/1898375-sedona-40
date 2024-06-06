@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог гостинниц города Седона</title>
+</head>
+<body>
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-logo-link" href=#>
+        <img class="main-logo" src="index.html" alt="Герб города Седона">
+      </a>
+      <ul class="navigation-links">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Cедоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link active-link" href="#>Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="site-pages-nav">
+        <li class="site-pages-item">
+          <a class="search-page-link" href="#">
+            <img src="#" alt="Иконка увелитительной лупы">
+          </a>
+        </li>
+        <li class="site-pages-item">
+          <a class="favorites-page-link" href="#">
+            <img src="#" alt="Иконка сердечка">
+          </a>
+        </li>
+        <li class="site-pages-item">
+          <a class="want-page-link" href="#">
+            <span>Хочу сюда</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog">
+    <h1 class="catalog-title">Гостиницы Седоны</h1>
+
+    <header class="inner-page-header">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <img src="#" alt="Иконка дом">
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a breadcrumbs-link href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="">
+      <h2 class="visually-hidden">Фильтры каталога.</h2>
+      <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter-form">
+        <fieldset class="infrastructure-filter">
+          <legend class="visually-hidden">Фильтр инфраструктуры гостинниц</legend>
+          <h3 class="filters-title">Инфраструктура:</h3>
+          <ul class="filters-list">
+            <li class="filter-item">
+              <label class="swimpool">
+                <input class="swimpool-input visually-hidden" type="checkbox" name="swimpool-check" checked>
+                <span class="swimpool-label">Бассейн</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <label class="parking">
+                <input class="parking-input visually-hidden" type="checkbox" name="parking-check" checked>
+                <span class="parking-label">Парковка</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <label class="Wi-Fi">
+                <input class="Wi-Fi-input visually-hidden" type="checkbox" name="Wi-Fi-check">
+                <span class="Wi-Fi-label">Wi-Fi</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="housing-type-filter">
+          <legend class="visually-hidden">Фильтр инфраструктуры гостинниц</legend>
+          <h3 class="filters-title">Тип жилья:</h3>
+          <ul class="filters-list">
+            <li class="filter-item">
+              <label class="housing-type-name">
+                <input class="hotel-input visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
+                <span class="hotel-label">Гостиница</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <label class="housing-type-name">
+                <input class="motel-input visually-hidden" type="radio" name="motel-type" value="motel">
+                <span class="parking-label">Мотель</span>
+              </label>
+            </li>
+            <li class="filter-item">
+              <label class="housing-type-name">
+                <input class="apartments-input visually-hidden" type="radio" name="apartments-type" value="apartments">
+                <span class="apartments-label">Апартаменты</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
