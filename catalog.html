@@ -20,7 +20,7 @@
           <a class="navigation-link" href="#">О Cедоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link active-link" href="#>Гостиницы</a>
+          <a class="navigation-link active-link" href="#">Гостиницы</a>
         </li>
       </ul>
       <ul class="site-pages-nav">
@@ -56,7 +56,7 @@
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a breadcrumbs-link href="#">Гостиницы</a>
+          <a class="breadcrumbs-link" href="#">Гостиницы</a>
         </li>
       </ul>
     </header>
@@ -88,6 +88,10 @@
             </li>
           </ul>
         </fieldset>
+
+        <!-- В ТЗ не указано, но я решил что выбор из одного пункта в фильтер "Тип" как то странно смотрится поэтому тут снова
+        чекбоксы которые можно стилизовать кружками -->
+
         <fieldset class="housing-type-filter">
           <legend class="visually-hidden">Фильтр инфраструктуры гостинниц</legend>
           <h3 class="filters-title">Тип жилья:</h3>
@@ -263,6 +267,61 @@
         </li>
       </ul>
     </section>
+    <ul class="catalog-pagination">
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button pagination-active" href="#">
+          1
+          <span class="visually-hidden">Показать первую страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          2
+          <span class="visually-hidden">Показать вторую страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          3
+          <span class="visually-hidden">Показать третью страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          3
+          <span class="visually-hidden">Показать третью страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          4
+          <span class="visually-hidden">Показать четвёртую страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          ...
+          <span class="visually-hidden">Выбрать страницу каталога.</span>
+        </a>
+      </li>
+      <li class="catalog-pagination-item">
+        <a class="catalog-pagination-button" href="#">
+          10
+          <span class="visually-hidden">Показать десятую страницу каталога.</span>
+        </a>
+      </li>
+    </ul>
+
+    <aside class="subscription">
+      <h2 class="visually-hidden">Форма для рассылки информации.</h2>
+      <p class="slogan-text variant-color-text">Подпишитесь на рассылку</p>
+      <p class="subslogan-text variant-color-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-form">
+        <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email">
+        <button class="subscription-button second-style-button" type="submit">Подписаться</button>
+      </form>
+    </aside>
+
   </main>
 
   <footer class="main-footer">
