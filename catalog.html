@@ -8,8 +8,8 @@
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-logo-link" href=#>
-        <img class="main-logo" src="index.html" alt="Герб города Седона">
+      <a class="main-logo-link" href="index.html">
+        <img class="main-logo" src="#" alt="Герб города Седона">
         <span class="visually-hidden">Логотип сайта Седона.</span>
       </a>
       <ul class="navigation-links">
@@ -26,13 +26,11 @@
       <ul class="site-pages-nav">
         <li class="site-pages-item">
           <a class="search-page-link" href="#">
-            <img src="#" alt="Иконка увелитительной лупы">
             <span class="visually-hidden">Переход на страницу Поиск.</span>
           </a>
         </li>
         <li class="site-pages-item">
           <a class="favorites-page-link" href="#">
-            <img src="#" alt="Иконка сердечка">
             <span class="visually-hidden">Переход на страницу Избраное.</span>
           </a>
         </li>
@@ -52,7 +50,7 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
-            <img src="#" alt="Иконка дом">
+            <span class="visually-hidden">Переход на страницу главную страницу.</span>
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -89,28 +87,25 @@
           </ul>
         </fieldset>
 
-        <!-- В ТЗ не указано, но я решил что выбор из одного пункта в фильтер "Тип" как то странно смотрится поэтому тут снова
-        чекбоксы которые можно стилизовать кружками -->
-
         <fieldset class="housing-type-filter">
           <legend class="visually-hidden">Фильтр инфраструктуры гостинниц</legend>
           <h3 class="filters-title">Тип жилья:</h3>
           <ul class="filters-list">
             <li class="filter-item">
               <label class="housing-type-name">
-                <input class="hotel-input visually-hidden" type="checkbox" name="hotel-type" value="hotel" checked>
+                <input class="hotel-input visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
                 <span class="hotel-label">Гостиница</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="housing-type-name">
-                <input class="motel-input visually-hidden" type="checkbox" name="motel-type" value="motel">
+                <input class="motel-input visually-hidden" type="radio" name="hotel-type" value="motel" >
                 <span class="parking-label">Мотель</span>
               </label>
             </li>
             <li class="filter-item">
               <label class="housing-type-name">
-                <input class="apartments-input visually-hidden" type="checkbox" name="apartments-type" value="apartments">
+                <input class="apartments-input visually-hidden" type="radio" name="hotel-type" value="apartments">
                 <span class="apartments-label">Апартаменты</span>
               </label>
             </li>
@@ -329,26 +324,23 @@
     <ul class="social-link-list">
       <li class="social-link-item">
         <a class="social-link" href="#">
-          <img src="#" alt="Логотип Вконтакте">
           <span class="visually-hidden">Переход на станицу Седона в соцсети Вконтакте.</span>
         </a>
       </li>
       <li class="social-link-item">
         <a class="social-link" href="#">
-          <img src="#" alt="Логотип Телеграмм">
           <span class="visually-hidden">Переход в группу Седона в Телеграмм.</span>
         </a>
       </li>
       <li class="social-link-item">
         <a class="social-link" href="#">
-          <img src="#" alt="Логотип Ютуб">
           <span class="visually-hidden">Переход на канал Седона сервиса Ютуб.</span>
         </a>
       </li>
     </ul>
     <a class="phone-link" href="tel:=+78128121212">+7 (812) 812-12-12</a>
     <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="#" alt="Логотип HTML Академии">
+      <span class="visually-hidden">Переход на сайт разработчика.</span>
     </a>
   </footer>
 
