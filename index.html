@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Туристический сайт города Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="index-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo-link" href=# aria-current="page">
           <img class="main-logo" src="images/logo.svg" alt="Герб города Седона" width="140" height="70">
           <span class="visually-hidden">Логотип сайта Седона.</span>
         </a>
-        <ul class="navigation-links">
+        <ul class="navigation-links global-list-style">
           <li class="navigation-item">
             <a class="navigation-link active-link" href="#">Главная</a>
           </li>
@@ -22,7 +23,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="site-pages-nav">
+        <ul class="site-pages-nav global-list-style">
           <li class="site-pages-item">
             <a class="search-page-link" href="#">
               <span class="visually-hidden">Переход на страницу Поиск.</span>
@@ -34,7 +35,7 @@
             </a>
           </li>
           <li class="site-pages-item">
-            <a class="want-page-link" href="#">
+            <a class="want-page-link main-style-button" href="#">
               <span>Хочу сюда</span>
             </a>
           </li>
@@ -42,7 +43,7 @@
       </nav>
     </header>
 
-    <main class="index-page">
+    <main class="main-index">
 
       <section class="hero-section">
         <h1 class="visually-hidden">Туристический сайт города Седона.</h1>
@@ -53,8 +54,8 @@
         <h2 class="visually-hidden">Преимущества отдыха в Седоне.</h2>
         <p class="slogan-text">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
         <p class="subslogan-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ul class="advantages-list">
-          <li class="advantages-item">
+        <ul class="advantages-list global-list-style">
+          <li class="advantages-item second-advantages-item">
             <h3 class="advantages-title variant-color-text">Настоящий<br> городок</h3>
             <p class="variant-color-text">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
             <img src="images/content/city-view.jpg" alt="Улица города" width="800" height="385">
@@ -63,7 +64,7 @@
             <h3 class="advantages-title">Небольшая<br> площадь</h3>
             <p>Все достопримечательности<br> находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item third-advantages-item">
             <h3 class="advantages-title">Красивая<br> дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
@@ -71,7 +72,7 @@
             <h3 class="advantages-title">Мало<br> туристов</h3>
             <p>Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item second-advantages-item">
             <h3 class="advantages-title variant-color-text">Там есть<br> мост дьявола</h3>
             <p class="variant-color-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="images/content/canyon view.jpg" alt="Мост Дьявола" width="800" height="385">
@@ -83,7 +84,7 @@
         <h2 class="visually-hidden">Комфорт и уют.</h2>
         <p class="slogan-text">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
         <p class="subslogan-text">Опытный персонал и качественное обслуживание!</p>
-        <ul class="comfort-list">
+        <ul class="comfort-list global-list-style">
           <li class="comfort-item">
             <h3 class="comfort-item-title">Жильё</h3>
             <p>Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
@@ -110,7 +111,7 @@
         <p class="subslogan-text variant-color-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-form">
           <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email">
-          <button class="subscription-button second-style-button" type="submit">Подписаться</button>
+          <button class="subscription-button main-style-button second-style-button" type="submit">Подписаться</button>
         </form>
       </section>
 
@@ -118,7 +119,7 @@
 
     <footer class="main-footer">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
-      <ul class="social-link-list">
+      <ul class="social-link-list global-list-style">
         <li class="social-link-item">
           <a class="social-link" href="#">
             <span class="visually-hidden">Переход на станицу Седона в соцсети Вконтакте.</span>

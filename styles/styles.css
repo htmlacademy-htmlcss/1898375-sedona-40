@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  /* Глобальные стили */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.index-page,
+.catalog-page {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 117%;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.global-list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-style-button {
+  font-size: 20px;
+  line-height: 180%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+
+}
+
+.second-style-button {
+  background-color: #82b3d3;
+}
+
+.variant-color-text {
+ color: #ffffff;
+}
+
+.global-fieldset-style {
+  line-height: 128%;
+  border: none;
+}
+
+  /* Стили для index */
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.hero-section {
+  background-image: url("../images/background/hero-background.jpg"),
+                    url("../images/background/hero-divider.png");
+  background-size: cover;
+  background-position: center, bottom;
+  background-repeat: no-repeat;
+}
+
+.slogan-text {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subslogan-text {
+  font-size: 22px;
+  line-height: 118%;
+}
+
+.advantages-item {
+  background-color: #ffffff;
+}
+
+.second-advantages-item{
+  background-color: #82b3d3;
+}
+
+.third-advantages-item {
+  background-color: #e6f0f6;
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comfort-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscription {
+  background-image: url("../images/background/subscribe-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.phone-link {
+  font-size: 40px;
+  line-height: 100%;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Стили для catalog */
+
+.filters-wrapper {
+  background-image: url("../images/background/filters-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: cover;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 131%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-style-button {
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+}
+
+.filters-title {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.reset-filters-button {
+  background-color: transparent;
+}
+
+.range-input-container input{
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 700;
+}
+
+.hotel-number-result {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 117%;
+  font-weight: 700;
+}
+
+.card-rating {
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.card-toggle-button{
+  border: none;
+  background-color: #82b3d3;
+}
+
+.catalog-pagination-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #82b3d3;
+}
+
+.card-selected {
+  background-color: #7db54f;
+}
+
+.catalog-pagination-button {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
