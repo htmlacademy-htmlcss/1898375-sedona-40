@@ -16,6 +16,11 @@
 
   /* Глобальные стили */
 
+
+html {
+  width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -29,8 +34,26 @@
   overflow: hidden;
 }
 
+.global-list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2)
+}
+
 .index-page,
 .catalog-page {
+  margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 117%;
@@ -39,13 +62,32 @@
   background-color: #ffffff;
 }
 
-.global-list-style {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-container {
+  flex-grow: 1;
+}
+
+.main-navigation {
+ display: flex;
+}
+
+.main-logo-link {
+  margin-right: 30px;
+}
+
+.navigation-links {
+  min-width: 339px;
+  display: flex;
+}
+
+.site-pages-nav {
+  min-width: 268px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 .main-style-button {
+  padding: 0;
   font-size: 20px;
   line-height: 180%;
   font-weight: 700;
@@ -54,6 +96,7 @@
   color: #ffffff;
   background-color: #756157;
   border: none;
+  border-radius: 4px;
 
 }
 
@@ -66,8 +109,18 @@
 }
 
 .global-fieldset-style {
+  margin: 0;
+  padding: 0;
   line-height: 128%;
   border: none;
+}
+
+.main-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
 }
 
   /* Стили для index */
@@ -82,31 +135,77 @@
 }
 
 .hero-section {
-  background-image: url("../images/background/hero-background.jpg"),
-                    url("../images/background/hero-divider.png");
-  background-size: cover;
-  background-position: center, bottom;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  background-image:url("../images/background/hero-divider.png"), url("../images/background/hero-background.jpg");
+  background-size: 100%, cover;
+  background-position: center bottom, center center;
   background-repeat: no-repeat;
 }
 
+.welcome-vector {
+  display: block;
+  margin: 0 auto;
+}
+
+.slogan-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+  align-items: center;
+}
+
 .slogan-text {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 120%;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .subslogan-text {
+  margin: 0;
   font-size: 22px;
   line-height: 118%;
 }
 
 .advantages-item {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 112.5px 85px;
   background-color: #ffffff;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .second-advantages-item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
   background-color: #82b3d3;
+}
+
+.advantages-item-container {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.special-advantages-container {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  justify-content: center;
 }
 
 .third-advantages-item {
@@ -114,23 +213,88 @@
 }
 
 .advantages-title {
+  margin: 0;
+  margin-bottom: 60px;
   font-size: 24px;
   font-weight: 700;
+  line-height: 117%;
   text-transform: uppercase;
+}
+
+
+.advantages-title ~ p {
+  margin: 0;
+}
+
+.comfort-slogan-wrapper {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
 }
 
 .comfort-item-title {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
+.comfort-list {
+  display: flex;
+}
+
+.comfort-item {
+  width: 400px;
+  padding: 80px 85px;
+  text-align: center;
+}
+
+.search-container {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.search-container .slogan-text {
+  margin-bottom: 20px;
+}
+
+.search-container .subslogan-text {
+  margin-bottom: 54px;
+}
+
+.search-container .modal-button {
+  padding: 8px 50px;
+}
+
 .subscription {
+  padding: 96px 258px 104px 258px;
+  text-align: center;
   background-image: url("../images/background/subscribe-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
+}
+
+.subscription .subslogan-text {
+  margin-bottom: 54px;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-form .subscription-button {
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+}
+
+.subscription-field {
+  width: 452px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .phone-link {
@@ -142,12 +306,29 @@
 
 /* Стили для catalog */
 
+.catalog-title {
+  margin: 0;
+}
+
 .filters-wrapper {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
   background-image: url("../images/background/filters-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
+}
+
+.catalog-filter-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.filters-title {
+  margin: 0;
 }
 
 .catalog-title {
