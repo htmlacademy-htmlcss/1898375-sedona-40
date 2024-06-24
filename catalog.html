@@ -16,13 +16,13 @@
         </a>
         <ul class="navigation-links global-list-style">
           <li class="navigation-item">
-            <a class="navigation-link active-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link active-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="site-pages-nav global-list-style">
@@ -37,9 +37,7 @@
             </a>
           </li>
           <li class="site-pages-item">
-            <a class="want-page-link main-style-button" href="#">
-              <span>Хочу сюда</span>
-            </a>
+            <a class="want-page-link main-style-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -64,6 +62,7 @@
         <section class="catalog-filters variant-color-text">
           <h2 class="visually-hidden">Фильтры каталога.</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter-form">
+
             <fieldset class="infrastructure-filter global-fieldset-style">
               <legend class="visually-hidden">Фильтр инфраструктуры гостинниц</legend>
               <h3 class="filters-title">Инфраструктура:</h3>
@@ -113,6 +112,7 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="range-filter global-fieldset-style">
               <legend class="visually-hidden">Фильтр стоимости</legend>
               <h3 class="filters-title">Стоимость, ₽:</h3>
@@ -129,10 +129,12 @@
                 </button>
               </div>
             </fieldset>
+
             <div class="form-buttons-container">
               <button class="submit-filters-button catalog-style-button second-style-button" type="submit">Применить</button>
               <button class="reset-filters-button catalog-style-button" type="button">Сбросить</button>
             </div>
+
           </form>
         </section>
       </div>
@@ -149,24 +151,24 @@
             <option value="ascending">Сначало дорогие</option>
             <option value="popular">По популярности</option>
           </select>
+          <ul class="view-change-list global-list-style">
+            <li class="view-change-item">
+              <a class="view-change-button view-change-selected" href="catalog.html?view=tile">
+                <span class="visually-hidden">Отображать гостиницы в виде плиток.</span>
+              </a>
+            </li>
+            <li class="view-change-item">
+              <a class="view-change-button" href="catalog.html?view=card">
+                <span class="visually-hidden">Отображать гостиницы в виде карточек.</span>
+              </a>
+            </li>
+            <li class="view-change-item">
+              <a class="view-change-button" href="catalog.html?view=list">
+                <span class="visually-hidden">Отображать гостиницы в виде списка.</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="view-change-list global-list-style">
-          <li class="view-change-item">
-            <a class="view-change-button" href="catalog.html?view=tile">
-              <span class="visually-hidden">Отображать гостиницы в виде плиток.</span>
-            </a>
-          </li>
-          <li class="view-change-item">
-            <a class="view-change-button" href="catalog.html?view=card">
-              <span class="visually-hidden">Отображать гостиницы в виде карточек.</span>
-            </a>
-          </li>
-          <li class="view-change-item">
-            <a class="view-change-button" href="catalog.html?view=list">
-              <span class="visually-hidden">Отображать гостиницы в виде списка.</span>
-            </a>
-          </li>
-        </ul>
         <ul class="catalog-cards-list global-list-style">
           <li class="cards-list-item">
             <h3 class="card-title">Amara Resort & Spa</h3>
@@ -186,6 +188,7 @@
                 </button>
               </div>
               <div class="card-rating-container">
+                <span class="hotel-stars four-stars-rating"></span>
                 <p class="card-rating">Рейтинг: 8,5</p>
               </div>
             </div>
@@ -208,6 +211,7 @@
                 </button>
               </div>
               <div class="card-rating-container">
+                <span class="hotel-stars four-stars-rating"></span>
                 <p class="card-rating">Рейтинг: 9,2</p>
               </div>
             </div>
@@ -230,6 +234,7 @@
                 </button>
               </div>
               <div class="card-rating-container">
+                <span class="hotel-stars three-stars-rating"></span>
                 <p class="card-rating">Рейтинг: 6,9</p>
               </div>
             </div>
@@ -252,66 +257,67 @@
                 </button>
               </div>
               <div class="card-rating-container">
+                <span class="hotel-stars two-stars-rating"></span>
                 <p class="card-rating">Рейтинг: 5,0</p>
               </div>
             </div>
           </li>
         </ul>
+        <ul class="catalog-pagination global-list-style">
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button pagination-active" href="#">
+              1
+              <span class="visually-hidden">Показать первую страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button" href="#">
+              2
+              <span class="visually-hidden">Показать вторую страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button" href="#">
+              3
+              <span class="visually-hidden">Показать третью страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button" href="#">
+              3
+              <span class="visually-hidden">Показать третью страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button" href="#">
+              4
+              <span class="visually-hidden">Показать четвёртую страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button pagination-dots" href="#">
+              ...
+              <span class="visually-hidden">Выбрать страницу каталога.</span>
+            </a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-button" href="#">
+              10
+              <span class="visually-hidden">Показать десятую страницу каталога.</span>
+            </a>
+          </li>
+        </ul>
       </section>
-      <ul class="catalog-pagination global-list-style">
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button pagination-active" href="#">
-            1
-            <span class="visually-hidden">Показать первую страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            2
-            <span class="visually-hidden">Показать вторую страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            3
-            <span class="visually-hidden">Показать третью страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            3
-            <span class="visually-hidden">Показать третью страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            4
-            <span class="visually-hidden">Показать четвёртую страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            ...
-            <span class="visually-hidden">Выбрать страницу каталога.</span>
-          </a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="catalog-pagination-button" href="#">
-            10
-            <span class="visually-hidden">Показать десятую страницу каталога.</span>
-          </a>
-        </li>
-      </ul>
 
-      <aside class="subscription">
+      <section class="subscription catalog-subscription">
         <h2 class="visually-hidden">Форма для рассылки информации.</h2>
-        <p class="slogan-text variant-color-text">Подпишитесь на рассылку</p>
-        <p class="subslogan-text variant-color-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <p class="slogan-text">Подпишитесь на рассылку</p>
+        <p class="subslogan-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-form">
-          <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email">
+          <input class="subscription-field catalog-subscription-field" placeholder="Ваш e-mail" type="email" name="subscription-email">
           <button class="subscription-button main-style-button second-style-button" type="submit">Подписаться</button>
         </form>
-      </aside>
+      </section>
 
     </main>
 
