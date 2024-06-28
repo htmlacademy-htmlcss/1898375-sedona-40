@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -16,6 +16,9 @@
 
   /* Глобальные стили */
 
+* {
+  box-sizing: border-box;
+}
 
 html {
   width: 100%;
@@ -59,25 +62,37 @@ html {
   line-height: 117%;
   font-weight: 400;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .main-container {
   flex-grow: 1;
+  background-color: #ffffff;
 }
 
+.main-header {
+  padding: 0 70px;
+}
 .main-navigation {
+  position: relative;
  display: flex;
  align-items: center;
 }
 
 .main-logo-link {
-  margin-right: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation-item {
+  display: flex;
 }
 
 .navigation-links {
-  min-width: 339px;
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 184px;
 }
 
 .navigation-link {
@@ -88,7 +103,6 @@ html {
   min-width: 268px;
   display: flex;
   margin-left: auto;
-  margin-right: 70px;
 }
 
 .main-style-button {
@@ -115,7 +129,6 @@ html {
 
 .want-page-link {
   display: block;
-  box-sizing: border-box;
   padding: 8px 34px;
   font-size: 16px;
   line-height: 125%;
@@ -130,11 +143,12 @@ html {
 }
 
 .main-footer {
+  display: flex;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 70px;
   padding-right: 70px;
-  text-align: center;
 }
 
   /* Стили для index */
@@ -149,6 +163,7 @@ html {
 }
 
 .hero-section {
+  padding: 0 20px ;
   padding-top: 51px;
   padding-bottom: 82px;
   background-image:url("../images/background/hero-divider.png"), url("../images/background/hero-background.jpg");
@@ -165,10 +180,10 @@ html {
 .slogan-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
-  padding-top: 69px;
-  padding-bottom: 69px;
   align-items: center;
+  margin-bottom: 25px;
+  padding: 69px 20px;
+
 }
 
 .slogan-text {
@@ -189,7 +204,6 @@ html {
 
 .advantages-item {
   width: 400px;
-  box-sizing: border-box;
   padding: 112.5px 85px;
   background-color: #ffffff;
 }
@@ -217,7 +231,6 @@ html {
 
 .special-advantages-container {
   width: 400px;
-  box-sizing: border-box;
   padding: 20px 0;
   justify-content: center;
 }
@@ -241,8 +254,7 @@ html {
 }
 
 .comfort-slogan-wrapper {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 64px 20px;
   text-align: center;
 }
 
@@ -256,6 +268,7 @@ html {
 
 .comfort-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .comfort-item {
@@ -265,7 +278,7 @@ html {
 }
 
 .search-container {
-  padding: 96px 0;
+  padding: 96px 20px;
   text-align: center;
 }
 
@@ -282,7 +295,7 @@ html {
 }
 
 .subscription {
-  padding: 96px 258px 104px 258px;
+  padding: 96px 50px 104px 50px;
   text-align: center;
   background-image: url("../images/background/subscribe-background.jpg");
   background-position: center;
@@ -297,18 +310,22 @@ html {
 
 .subscription-form {
   display: flex;
+  justify-content: center;
 }
 
 .subscription-form .subscription-button {
+  height: 52px;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
 }
 
 .subscription-field {
-  width: 452px;
+  min-width: 452px;
   padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .phone-link {
@@ -407,7 +424,6 @@ html {
 
 .range-input-container input{
   width: 143px;
-  box-sizing: border-box;
   padding: 12px 20px;
   font-size: 18px;
   line-height: 133%;
@@ -503,7 +519,6 @@ html {
   width: 100%;
   height: 100%;
   display: inline-block;
-  box-sizing: border-box;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
@@ -514,7 +529,7 @@ html {
 
 .catalog-cards-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
   row-gap: 20px;
   margin-bottom: 80px;
@@ -523,7 +538,6 @@ html {
 .cards-list-item {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -620,6 +634,7 @@ html {
 
 .catalog-pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-pagination-item:last-child {
