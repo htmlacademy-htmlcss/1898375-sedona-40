@@ -290,13 +290,27 @@ html {
   fill: #756157;
 }
 
+.developer-link:focus {
+  outline: none;
+}
+
 .developer-link:focus .developer-icon {
   fill: #756157;
-  outline: none;
 }
 
 .developer-link:active .developer-icon {
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 1;
 }
 
   /* Стили для index */
@@ -504,11 +518,39 @@ html {
   outline: none;
 }
 
+.modal {
+  width: 717px;
+  position: relative;
+  margin: auto;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+.modal-container-off {
+  display: none;
+}
+
+.modal-hotel-search {
+  padding: 70px 64px;
+}
+
+.modal-title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.modal-input-label {
+  display: flex;
+}
+
 /* Стили для catalog */
 
 .catalog-title {
   margin: 0;
   margin-bottom: 8px;
+  font-size: 60px;
+  line-height: 130%;
+  font-weight: 700;
 }
 
 .filters-wrapper {
@@ -627,16 +669,9 @@ html {
   opacity: 0.3;
 }
 
-
 .filters-title {
   margin: 0;
   margin-bottom: 32px;
-}
-
-.catalog-title {
-  font-size: 60px;
-  line-height: 130%;
-  font-weight: 700;
 }
 
 .breadcrumbs {
@@ -700,6 +735,39 @@ html {
   color: #ffffff;
   background-color: #756157;
   border: none;
+}
+
+.catalog-style-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-style-button:hover,
+.catalog-style-button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.catalog-style-button:disabled {
+  background-color: #e5e5e5;
+}
+
+.card-toggle-button:hover,
+.card-toggle-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.card-selected:hover,
+.card-selected:focus {
+  background-color: #6c9e42;
+}
+
+.card-selected:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.card-selected:disabled {
+  background-color: #e5e5e5;
 }
 
 .filters-title {
@@ -1093,6 +1161,9 @@ html {
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.pagination-inactive {
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -1100,6 +1171,19 @@ html {
 .pagination-active {
   color: #000000;
   background-color: #f2f2f2;
+}
+
+.pagination-inactive:hover {
+ background-color: #68a2ca;
+}
+
+.pagination-inactive:focus,
+.pagination-active:focus {
+  outline: none;
+}
+
+.pagination-inactive:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-dots {
