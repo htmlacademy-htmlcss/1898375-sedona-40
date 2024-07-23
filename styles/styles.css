@@ -728,6 +728,8 @@ html {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  border: none;
+  outline: none;
   border-radius: 4px;
 }
 
