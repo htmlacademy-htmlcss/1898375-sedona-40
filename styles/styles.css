@@ -564,11 +564,29 @@ html {
 
 .resident-wrapper {
   display: flex;
-  gap: 46px;
+  align-items: center;
+}
+
+.children-tooltip-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-button {
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  background-image: url(../images/icons/modal-tooltip.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .resident-input-wrapper {
   display: flex;
+  margin-left: 46px;
 }
 
 .modal-title {
@@ -590,6 +608,13 @@ html {
   text-transform: capitalize;
 }
 
+.modal-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 700;
+}
+
 .modal-inputs-wrapper {
   display: flex;
   justify-content: space-between;
@@ -604,6 +629,13 @@ html {
   position: absolute;
   top: 40px;
   left: 21px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 131%;
+}
+
+.input-error-message {
+  color: #ff5757;
 }
 
 .modal-inputs-wrapper input[type="text"] {
@@ -614,6 +646,9 @@ html {
   border-radius: 4px;
   outline: none;
   background-color: #f2f2f2;
+  background-image: url(../images/icons/input-calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center right 22px
 }
 
 .modal-input-wrapper {
@@ -622,17 +657,27 @@ html {
 
 .increase-button,
 .decrease-button {
+  position: relative;
   width: 40px;
   padding: 14px 10px;
   border: none;
   outline: none;
 }
 
+.increase-button::before,
+.increase-button::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .modal-inputs-wrapper input[type="number"] {
-  width: 100%;
+  width: 40px;
   height: 100%;
   padding: 14px 10px;
   appearance: none;
+  text-align: center;
   border: none;
   border-radius: 4px;
   outline: none;
