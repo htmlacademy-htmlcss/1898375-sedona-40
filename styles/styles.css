@@ -662,14 +662,24 @@ html {
   padding: 14px 10px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .increase-button::before,
-.increase-button::after {
+.increase-button::after,
+.decrease-button::before {
   position: absolute;
-  left: 50%;
+  content: "";
+  width: 14px;
+  height: 2px;
   top: 50%;
+  left: 50%;
   transform: translate(-50%,-50%);
+  background-color: #cdc7c4;
+}
+
+.increase-button::after {
+  transform: translate(-50%,-50%) rotate(90deg);
 }
 
 .modal-inputs-wrapper input[type="number"] {
