@@ -169,22 +169,56 @@
           <span class="visually-hidden">Закрыть поиск гостинницы.</span>
         </button>
         <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get" name="modal-search-form">
-          <label class="modal-input-label">
-            <h3 class="input-title">Дата заезда</h3>
-            <input class="" type="date">
-          </label>
-          <label class="modal-input-label">
-            <h3 class="input-title">Дата выезда</h3>
-            <input class="" type="date">
-          </label>
-          <label class="modal-input-label">
-            <h3 class="input-title">Взрослые</h3>
-            <input class="" type="date">
-          </label>
-          <label class="modal-input-label">
-            <h3 class="input-title">Дети</h3>
-            <input class="" type="date">
-          </label>
+          <div class="modal-inputs-wrapper">
+            <label class="input-lable" for="arrave-date">Дата заезда</label>
+            <div class="date-input-wrapper">
+              <input class="modal-input" id="arrave-date" name="arrave-date" type="text" value="27 апреля 2020" placeholder="Укажите дату">
+              <strong>Мы не можем отправить вас в прошлое.</strong>
+            </div>
+          </div>
+          <div class="modal-inputs-wrapper">
+            <label class="input-lable" for="depart-date">Дата выезда</label>
+            <div class="date-input-wrapper">
+              <input class="modal-input" id="depart-date" name="depart-date" type="text" value="1 сентября 2023" placeholder="Укажите дату">
+              <strong>На эти даты есть свободные номера. Пока есть.</strong>
+            </div>
+          </div>
+          <div class="modal-inputs-wrapper">
+            <div class="resident-wrapper">
+              <label class="input-lable" for="adultAmount">Взрослые</label>
+              <div class="resident-input-wrapper">
+                <button class="increase-button" type="button">
+                  <span class="visually-hidden">Уменьшить число взрослых.</span>
+                </button>
+                <input class="modal-input" type="number" id="adultAmount" name="adult-amount" value="2" min="0" max="50" required>
+                <button class="decrease-button" type="button">
+                  <span class="visually-hidden">Увеличить число взрослых.</span>
+                </button>
+              </div>
+            </div>
+            <div class="resident-wrapper">
+              <label class="input-lable" for="childrenAmount">Дети</label>
+              <button class="">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
+              <div class="resident-input-wrapper">
+                <button class="increase-button" type="button">
+                  <span class="visually-hidden">Уменьшить число детей.</span>
+                </button>
+                <input class="modal-input" type="number" id="childrenAmount" name="children-amount" value="2" min="0" max="50" required>
+                <button class="decrease-button" type="button">
+                  <span class="visually-hidden">Увеличить число детей.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a class="modal-form-button second-style-button">
+            Найти
+            <span class="visually-hidden">Переход на страницу с результатами поиска. </span>
+          </a>
         </form>
       </section>
     </div>
