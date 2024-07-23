@@ -118,11 +118,13 @@
             <fieldset class="range-filter global-fieldset-style">
               <legend class="visually-hidden">Фильтр стоимости</legend>
               <h3 class="filters-title">Стоимость, ₽:</h3>
-              <div class="range-input-container">
-                <input class="range-input-min" type="number" value="0" name="min-price">
-                <input class="range-input-max" type="number" value="9000" name="max-price">
+              <div class="range-input-wrapper">
+                <label class="first-range-lable" for="first-range-lable">от</label>
+                <input class="range-input-min" type="number" value="0" name="min-price" id="first-range-lable">
+                <label class="second-range-lable" for="second-range-lable">до</label>
+                <input class="range-input-max" type="number" value="9000" name="max-price" id="second-range-lable">
               </div>
-              <div class="price-range-wrapper">
+              <div class="range-bar-wrapper">
                 <div class="range-bar">
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -136,7 +138,7 @@
 
             <div class="form-buttons-container">
               <button class="submit-filters-button catalog-style-button second-style-button" type="submit">Применить</button>
-              <button class="reset-filters-button catalog-style-button" type="button">Сбросить</button>
+              <button class="reset-filters-button catalog-style-button" type="reset">Сбросить</button>
             </div>
 
           </form>

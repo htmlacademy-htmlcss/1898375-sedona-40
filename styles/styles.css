@@ -52,8 +52,6 @@ html {
 .index-page,
 .catalog-page {
   margin: 0;
-  margin-left: 40px;
-  margin-right: 40px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -72,6 +70,7 @@ html {
 
 .main-header {
   padding: 0 70px;
+  background-color: #ffffff;
 }
 .main-navigation {
   position: relative;
@@ -627,7 +626,7 @@ html {
 
 .date-input-wrapper strong{
   position: absolute;
-  top: 40px;
+  top: 53px;
   left: 21px;
   font-family: inherit;
   font-size: 16px;
@@ -651,8 +650,13 @@ html {
   background-position: center right 22px
 }
 
-.modal-input-wrapper {
-  display: flex;
+.modal-inputs-wrapper input[type="text"]:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-inputs-wrapper input[type="text"]:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .increase-button,
@@ -663,6 +667,7 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 .increase-button::before,
@@ -802,6 +807,7 @@ html {
 .filter-input:not(:checked):active + .filter-label::before,
 .filter-input:checked:active + .filter-label::before  {
   opacity: 0.3;
+  outline: none;
 }
 
 .radio-input:not(:checked) + .filter-label::before {
@@ -956,13 +962,13 @@ html {
   margin-right: 70px;
 }
 
-.range-input-container {
+.range-input-wrapper {
   position: relative;
   display: flex;
   margin-bottom: 36px;
 }
 
-.range-input-container input{
+.range-input-wrapper input{
   width: 143px;
   padding: 12px 20px;
   font-size: 18px;
@@ -992,7 +998,7 @@ html {
   outline-offset: -3px;
 }
 
-.range-input-container::before {
+.range-input-wrapper .first-range-lable {
   position: absolute;
   content: "от";
   top: 10px;
@@ -1004,7 +1010,7 @@ html {
   z-index: 1;
 }
 
-.range-input-container::after {
+.range-input-wrapper .second-range-lable{
   position: absolute;
   content: "до";
   top: 10px;
@@ -1022,7 +1028,7 @@ html {
   margin: 0;
 }
 
-.price-range-wrapper {
+.range-bar-wrapper {
   position: relative;
   width: 288px;
   height: 4px;
@@ -1086,22 +1092,31 @@ html {
   background-color: #82b3d3;
 }
 
+.submit-filters-button:hover,
+.submit-filters-button:focus {
+  background-color: #68a2Ca;
+  outline: none;
+}
+
 .reset-filters-button {
   background-color: transparent;
 }
 
 .reset-filters-button:hover {
   color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 
 .reset-filters-button:focus {
   outline: 3px solid #82b3d3;
   color: rgba(255, 255, 255, 1);
+  background-color: transparent;
 }
 
 .reset-filters-button:active {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
 }
 
 .hotels-catalog {
@@ -1249,6 +1264,8 @@ html {
 
 .card-button-container {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
