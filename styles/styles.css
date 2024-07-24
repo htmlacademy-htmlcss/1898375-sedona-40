@@ -84,6 +84,10 @@ html {
   left: 0;
 }
 
+.main-logo-link:focus {
+  outline: none;
+}
+
 .navigation-item {
   display: flex;
 }
@@ -92,7 +96,7 @@ html {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 184px;
+  margin-left: 169px;
 }
 
 .navigation-link {
@@ -102,6 +106,12 @@ html {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: rgba(0, 0, 0, 0.6);
+  outline: none;
 }
 
 .active-link {
@@ -124,7 +134,7 @@ html {
 }
 
 .header-page-link {
-  display: inline-block;
+  display: block;
   width: 44px;
   height: 64px;
   padding: 22px 12px;
@@ -393,13 +403,25 @@ html {
 
 .advantages-title {
   margin: 0;
-  margin-bottom: 60px;
   font-size: 24px;
   font-weight: 700;
   line-height: 117%;
   text-transform: uppercase;
 }
 
+.advantages-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  margin: 0 auto;
+  margin-block: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.special-advantages-container .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3)
+}
 
 .advantages-title ~ p {
   margin: 0;
