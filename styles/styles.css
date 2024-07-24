@@ -536,17 +536,37 @@ html {
 
 .modal-close-button {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 62px;
   right: 40px;
-  width: 52px;
-  height: 52px;
+  width: 53px;
+  height: 53px;
   border: none;
   outline: none;
   border-radius: 50%;
   background-color: #f2f2f2;
-  background-image: url("../images/icons/modal-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.modal-close-icon {
+  fill: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6ee;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  outline: none;
+}
+
+.modal-close-button:active .modal-close-icon {
+  fill: #a1a1a1;
 }
 
 .modal-search-form {
@@ -572,15 +592,57 @@ html {
 }
 
 .tooltip-button {
+  position: relative;
   width: 26px;
   height: 26px;
   margin-left: 10px;
   border: none;
   outline: none;
   background-color: #ffffff;
-  background-image: url(../images/icons/modal-tooltip.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+}
+
+.tooltip-button-icon {
+  fill: #83b3d3;
+}
+
+.tooltip-button:hover .tooltip-button-icon,
+.tooltip-button:focus .tooltip-button-icon{
+  fill: rgb(131,179,211, 0.6);
+}
+
+.modal-tooltip {
+  position: absolute;
+  display: none;
+  top: 40px;
+  left: -116px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.modal-tooltip::before {
+  position: absolute;
+  content: "";
+  top: -17px;
+  left: 125px;
+  border: 9px solid transparent;
+  border-bottom-color: #333333;
+}
+
+.modal-tooltip-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.tooltip-button:hover .modal-tooltip,
+.tooltip-button:focus .modal-tooltip{
+  display: block;
 }
 
 .resident-input-wrapper {
@@ -662,6 +724,9 @@ html {
 .increase-button,
 .decrease-button {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   padding: 14px 10px;
   border: none;
@@ -674,11 +739,9 @@ html {
   position: absolute;
   display: flex;
   align-items: center;
-  content: "";
+  content: " ";
   width: 20px;
   height: 20px;
-  mask-image: url(../images/icons/decrease-button.svg);
-  mask-position: center center;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -686,18 +749,46 @@ html {
   border-radius: 3px;
 }
 
-.increase-button::after {
+.increase-button::before {
   position: absolute;
   content: " ";
   width: 20px;
   height: 20px;
-  mask-image: url(../images/icons/increase-button.svg);
-  mask-position: center center;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   border: none;
   border-radius: 3px;
+}
+
+.decrease-button-icon,
+.increase-button-icon{
+  fill: #d6d0cd;
+}
+
+.decrease-button:hover .decrease-button-icon,
+.increase-button:hover .increase-button-icon {
+  fill: #000000;
+}
+
+.decrease-button:focus .decrease-button-icon,
+.increase-button:focus .increase-button-icon {
+  fill: #000000;
+}
+
+.decrease-button:active .decrease-button-icon,
+.increase-button:active .increase-button-icon {
+  fill: #d6d6d6;
+}
+
+.decrease-button:focus::before,
+.increase-button:focus::before {
+  outline: 3px solid #83b3d3;
+}
+
+.decrease-button:active::before,
+.increase-button:active::before {
+  outline: none;
 }
 
 .modal-number-input {
@@ -749,6 +840,10 @@ html {
   border: none;
   outline: none;
   border-radius: 4px;
+}
+
+.modal-form-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .inner-page-header {
