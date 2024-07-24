@@ -171,7 +171,7 @@ html {
 }
 
 .main-style-button {
-  padding: 0;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 180%;
   font-weight: 700;
@@ -231,10 +231,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 45px 70px 35px 70px;
+
 }
 
 .social-link-list {
@@ -350,12 +348,16 @@ html {
 
 .slogan-text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 120%;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.slogan-wrapper .slogan-text {
+  margin-bottom: 25px;
 }
 
 .subslogan-text {
@@ -444,7 +446,7 @@ html {
 }
 
 .comfort-item::before {
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   margin-bottom: 30px;
 }
@@ -458,6 +460,7 @@ html {
 }
 
 .comfort-item:nth-child(3):before {
+  height: 76px;
   content: url(../images/icons/gift-icon.svg);
 }
 
@@ -486,8 +489,9 @@ html {
   margin-bottom: 54px;
 }
 
-.search-container .modal-button {
-  padding: 8px 50px;
+.modal-button {
+  width: 376px;
+  padding: 8px 10px;
 }
 
 .subscription {
@@ -509,14 +513,21 @@ html {
   justify-content: center;
 }
 
-.subscription-form .subscription-button {
-  height: 52px;
-  padding: 8px 50px;
+.subscription-button {
+  width: 232px;
+  padding: 8px 10px;
   border-radius: 0 4px 4px 0;
 }
 
+.subscription-field:placeholder-shown {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 133%;
+  color: #616161;
+}
+
 .subscription-field {
-  min-width: 452px;
+  width: 452px;
   padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
@@ -544,7 +555,7 @@ html {
   position: relative;
   margin: auto;
   background-color: #fcfcfc;
-  border-radius: 8px;
+  border-radius: 30px;
 }
 
 .modal-container-off {
@@ -976,6 +987,7 @@ html {
 .filters-title {
   margin: 0;
   margin-bottom: 32px;
+  text-transform: capitalize;
 }
 
 .breadcrumbs {
@@ -992,9 +1004,7 @@ html {
 .breadcrumbs-item::after {
   display: inline-block;
   content: url("../images/icons/selection-arrow.svg");
-  top: -3px;
-  left: 20.5px;
-  margin: 0 10.8px;
+  margin: 0 8px;
   transform: rotate(-90deg);
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(829%) hue-rotate(268deg) brightness(115%) contrast(100%);
 }
@@ -1095,7 +1105,7 @@ html {
 .range-input-wrapper {
   position: relative;
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 43px;
 }
 
 .range-input-wrapper input{
@@ -1258,6 +1268,7 @@ html {
 
 .sorting-filters-container {
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -1272,14 +1283,21 @@ html {
 }
 
 .hotel-selection {
+  width: 292px;
   padding: 14px 20px;
-  padding-right : 131px;
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-image: url("../images/icons/selection-arrow.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
+}
+
+.hotel-selection-text {
+  font-family: "PS Sans", sans-serif;
+  font-size: 17px;
+  line-height: 117%;
+  text-align: left;
 }
 
 .hotel-selection:hover,
@@ -1357,8 +1375,8 @@ html {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 2px solid #e5e5e5;
   border-radius: 4px;
+  outline: 2px solid #e5e5e5;
 }
 
 

@@ -9,7 +9,7 @@
   <body class="index-page">
     <div class="page-container">
 
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="main-navigation">
           <a class="main-logo-link" href=# aria-current="page">
             <img class="main-logo" src="images/logo.svg" alt="Герб города Седона" width="140" height="70">
@@ -45,14 +45,14 @@
         </nav>
       </header>
 
-      <main class="main-index main-container">
+      <main class="main-index main-container" data-test="main">
 
-        <section class="hero-section">
+        <section class="hero-section" data-test="hero">
           <h1 class="visually-hidden">Туристический сайт города Седона.</h1>
             <img class="welcome-vector" src="images/hero-welcome.svg" alt="Welcome to the gorgeous Sedona" width="458" height="352">
         </section>
 
-        <section class="advantages-section">
+        <section class="advantages-section" data-test="advantages">
           <div class="slogan-wrapper">
             <h2 class="visually-hidden">Преимущества отдыха в Седоне.</h2>
             <p class="slogan-text">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -94,7 +94,7 @@
           </ul>
         </section>
 
-        <section class="comfort-section">
+        <section class="comfort-section" data-test="service">
           <div class="comfort-slogan-wrapper">
             <h2 class="visually-hidden">Комфорт и уют.</h2>
             <p class="slogan-text">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
@@ -114,14 +114,14 @@
               <p>Не только китайского,<br> но и настоящего местного<br> производства!</p>
             </li>
           </ul>
-          <div class="search-container">
+          <div class="search-container" data-test="search">
             <p class="slogan-text">Заинтересовались?</p>
             <p class="subslogan-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button class="modal-button main-style-button" type="button" onclick="modalSearch.classList.remove('modal-container-off')">Поиск гостиницы в седоне</button>
           </div>
         </section>
 
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="visually-hidden">Форма для рассылки информации.</h2>
           <p class="slogan-text variant-color-text">Подпишитесь на рассылку</p>
           <p class="subslogan-text variant-color-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -133,7 +133,7 @@
 
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <h2 class="visually-hidden">Контакты и полезная информация.</h2>
         <ul class="social-link-list global-list-style">
           <li class="social-link-item">

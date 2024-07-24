@@ -9,7 +9,7 @@
 <body class="catalog-page">
   <div class="page-container">
 
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav class="main-navigation">
         <a class="main-logo-link" href=# aria-current="page">
           <img class="main-logo" src="images/logo.svg" alt="Герб города Седона" width="140" height="70">
@@ -45,7 +45,7 @@
       </nav>
     </header>
 
-    <main class="main-catalog main-container">
+    <main class="main-catalog main-container" data-test="main">
       <div class="filters-wrapper">
         <header class="inner-page-header">
           <h1 class="catalog-title variant-color-text">Гостиницы Седоны</h1>
@@ -62,7 +62,7 @@
           </ul>
         </header>
 
-        <section class="catalog-filters variant-color-text">
+        <section class="catalog-filters variant-color-text" data-test="filter">
           <h2 class="visually-hidden">Фильтры каталога.</h2>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter-form">
 
@@ -146,14 +146,14 @@
         </section>
       </div>
 
-      <section class="hotels-catalog">
+      <section class="hotels-catalog" data-test="catalog">
         <h2 class="visually-hidden">Каталог гостинниц</h2>
         <div class="sorting-filters-container">
           <p class="hotel-number-result">
             Найдено гостиниц:
             <span>38</span>
           </p>
-          <select class="hotel-selection" name="hotel-selection">
+          <select class="hotel-selection hotel-selection-text" name="hotel-selection">
             <option value="descending">Сначало дешёвые</option>
             <option value="ascending">Сначало дорогие</option>
             <option value="popular">По популярности</option>
@@ -291,14 +291,8 @@
           </li>
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-button pagination-inactive" href="#">
-              3
-              <span class="visually-hidden">Показать третью страницу каталога.</span>
-            </a>
-          </li>
-          <li class="catalog-pagination-item">
-            <a class="catalog-pagination-button pagination-inactive" href="#">
               4
-              <span class="visually-hidden">Показать четвёртую страницу каталога.</span>
+              <span class="visually-hidden">Показать третью страницу каталога.</span>
             </a>
           </li>
           <li class="catalog-pagination-item">
@@ -316,7 +310,7 @@
         </ul>
       </section>
 
-      <section class="subscription catalog-subscription">
+      <section class="subscription catalog-subscription" data-test="subscribe">
         <h2 class="visually-hidden">Форма для рассылки информации.</h2>
         <p class="slogan-text">Подпишитесь на рассылку</p>
         <p class="subslogan-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -328,7 +322,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <h2 class="visually-hidden">Контакты и полезная информация.</h2>
       <ul class="social-link-list global-list-style">
         <li class="social-link-item">
