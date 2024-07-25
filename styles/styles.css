@@ -236,6 +236,7 @@ html {
 }
 
 .social-link-list {
+  width: 141px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -323,9 +324,10 @@ html {
   /* Стили для index */
 
 .hero-section {
-  padding: 0 20px ;
+  padding: 0 20px;
   padding-top: 51px;
   padding-bottom: 82px;
+  background-color: #93979f;
   background-image:url("../images/background/hero-divider.png"), url("../images/background/hero-background.jpg");
   background-size: 100%, cover;
   background-position: center bottom -1px, center center;
@@ -497,11 +499,11 @@ html {
 .subscription {
   padding: 96px 50px 104px 50px;
   text-align: center;
+  background-color: #234646;
   background-image: url("../images/background/subscribe-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #000000;
 }
 
 .subscription .subslogan-text {
@@ -723,6 +725,9 @@ html {
   position: absolute;
   top: 53px;
   left: 21px;
+  width: 400px;
+  height: 40px;
+  overflow: overlay;
   font-family: inherit;
   font-size: 16px;
   line-height: 131%;
@@ -854,10 +859,10 @@ html {
   padding-bottom: 70px;
   padding-left: 70px;
   padding-right: 70px;
+  background-color: #6c676d;
   background-image: url("../images/background/filters-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
   background-size: cover;
 }
 
@@ -1238,6 +1243,11 @@ html {
   outline: none;
 }
 
+.submit-filters-button:disabled {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e5e5e5;
+}
+
 .reset-filters-button {
   background-color: transparent;
 }
@@ -1257,6 +1267,10 @@ html {
   outline: none;
   color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
+}
+
+.reset-filters-button:disabled{
+  opacity: 0.1;
 }
 
 .hotels-catalog {
@@ -1510,7 +1524,12 @@ html {
  background-color: #68a2ca;
 }
 
-.pagination-inactive:focus,
+.pagination-inactive:focus {
+  background-color: #68a2ca;
+  outline: 1px solid #82b3d3;
+  outline-offset: -1px;
+}
+
 .pagination-active:focus {
   outline: none;
 }
@@ -1524,6 +1543,11 @@ html {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+}
+
+.pagination-dots:focus {
+  outline: 1px solid #82b3d3;
+  outline-offset: -1px;
 }
 
 .catalog-subscription {
